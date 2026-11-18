@@ -15,11 +15,13 @@ Show the plots sequentially.
 Stop.
 
 ## Program
+## Input 1
 ```
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-# Create Dataset
+
+#Create Dataset
 data = {
     'Age': [22, 25, 30, 27, 32, 38, 26, 29, 35, 40],
     'Salary': [30000,35000,40000,45000,50000,38000,42000,48000,34000,37000],
@@ -28,39 +30,10 @@ data = {
 df = pd.DataFrame(data)
 print("\nDataset:")
 print(df)
-# Histogram
-plt.figure(figsize=(6,4))
-plt.hist(df['Age'], bins=6, color='orange', edgecolor='black')
-plt.title('Age Distribution')
-plt.xlabel('Age')
-plt.ylabel('Frequency')
-plt.show()
-# Scatter Plot
-plt.figure(figsize=(6,4))
-sns.scatterplot(x='Age', y='Salary', data=df, color='purple')
-plt.title('Age vs Salary')
-plt.xlabel('Age')
-plt.ylabel('Salary')
-plt.show()
-# Pie Chart
-plt.figure(figsize=(6,6))
-plt.pie(
-    df['Salary'],
-    labels=df['Age'],
-    colors=df['Salary_color'],
-    autopct='%1.1f%%'
-)
-plt.title('Salary Distribution by Age')
-plt.show()
-# Box Plot
-plt.figure(figsize=(6,4))
-sns.boxplot(x=df['Salary'], color='gold')
-plt.title('Salary Distribution')
-plt.xlabel('Salary')
-plt.show()
 ```
 
-## Output
+## Output 1
+```
 
 Dataset:
    Age  Salary Salary_color
@@ -74,14 +47,71 @@ Dataset:
 7   29   48000         pink
 8   35   34000        brown
 9   40   37000      magenta
+```
+
+
+
+## Input 2
+# Histogram
+```
+plt.figure(figsize=(6,4))
+plt.hist(df['Age'], bins=6, color='orange', edgecolor='black')
+plt.title('Age Distribution')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.show()
+```
+## Output 2
 
 <img width="536" height="393" alt="image" src="https://github.com/user-attachments/assets/7ba99dc0-cd6c-404c-90e5-319ca7b69b09" />
 
 
-<img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/b44080e6-5d42-4601-9097-d954a100e07b" />
+## Input 3
+
+# Scatter Plot
+```
+plt.figure(figsize=(6,4))
+sns.scatterplot(x='Age', y='Salary', data=df, color='purple')
+plt.title('Age vs Salary')
+plt.xlabel('Age')
+plt.ylabel('Salary')
+plt.show()
+```
+## Output 3
+<img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/6ebc6a35-fa9a-49c4-8d83-518d931b3342" />
 
 
-<img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/d94b8a00-5a43-4d30-9d18-88ee6e3d0fe2" />
+## Input 4
+
+# Pie Chart
+```
+plt.figure(figsize=(6,6))
+plt.pie(
+    df['Salary'],
+    labels=df['Age'],
+    colors=df['Salary_color'],
+    autopct='%1.1f%%'
+)
+plt.title('Salary Distribution by Age')
+plt.show
+```
+## Output 4
+<img width="481" height="504" alt="image" src="https://github.com/user-attachments/assets/24d34541-1903-4660-b80f-3ea14418f7d7" />
+
+## Input 5
+# Box Plot
+```
+plt.figure(figsize=(6,4))
+sns.boxplot(x=df['Salary'], color='gold')
+plt.title('Salary Distribution')
+plt.xlabel('Salary')
+plt.show()
+```
+## Output 5
+<img width="490" height="393" alt="image" src="https://github.com/user-attachments/assets/5b43356c-aba8-4088-a0a0-90d5e310786c" />
+
+
+
 
 
 
