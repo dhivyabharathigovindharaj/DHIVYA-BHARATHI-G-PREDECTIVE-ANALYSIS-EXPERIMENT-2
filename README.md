@@ -5,14 +5,15 @@
 To visualize data using Matplotlib and Seaborn libraries.
 
 ## Algorithm
-Start.
-Import the Matplotlib and Seaborn libraries.
-Load data into a Pandas DataFrame.
-Plot a histogram for age distribution using plt.hist().
-Plot a scatter plot for Age vs. Salary using sns.scatterplot().
-Plot salary distribution using sns.boxplot().
-Show the plots sequentially.
-Stop.
+
+1. Start.
+2. Import the Matplotlib and Seaborn libraries.
+3. Load data into a Pandas DataFrame.
+4. Plot a histogram for age distribution using plt.hist().
+5. Plot a scatter plot for Age vs. Salary using sns.scatterplot().
+6. Plot salary distribution using sns.boxplot().
+7. Show the plots sequentially.
+8. Stop.
 
 ## Program
 ## Input 1
@@ -119,3 +120,5 @@ plt.show()
 
 
 ## Result
+Thus, the experiment was successfully executed using Matplotlib and Seaborn to create different data visualizations. The histogram, scatter plot, pie chart, and box plot helped analyze and understand the dataset effectively.
+
